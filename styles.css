@@ -1,0 +1,91 @@
+/* body {
+  margin: 0px;
+} */
+
+.one {
+  grid-column: 1/ 2;
+
+  background-color: rgb(76, 137, 116);
+}
+
+.two {
+  grid-column: 2/3;
+
+  background-color: rgb(232, 199, 149);
+}
+
+.three {
+  grid-column: 3/4;
+
+  background-color: blueviolet;
+}
+
+.four {
+  grid-column: 1/ -1;
+
+  background-color: rgb(174, 156, 192);
+}
+
+.grid-container > * {
+  box-sizing: border-box;
+  margin: 10px 10px;
+}
+
+.circleOne {
+  height: 60px;
+  width: 60px;
+  background-color: rgb(233, 223, 22);
+  border-radius: 200px;
+  position: relative;
+  /* z-index: 10; */
+}
+
+.circleTwo {
+  height: 80px;
+  width: 80px;
+  background-color: blueviolet;
+  border-radius: 600px;
+  margin-top: -20px;
+  margin-left: 30px;
+}
+
+.triangleOne {
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 150px solid green;
+  z-index: 10;
+  position: relative;
+  margin-left: 20rem;
+  margin-top: 20rem;
+}
+
+.triangleTwo {
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 150px solid brown;
+  margin-left: 10rem;
+  margin-top: -9rem;
+  z-index: 100;
+  position: relative;
+}
+
+.triangleThree {
+  width: 0;
+  height: 0;
+  border-left: 250px solid transparent;
+  border-right: 250px solid transparent;
+  border-bottom: 250px solid black;
+  margin-left: 12rem;
+  margin-top: -16rem;
+  z-index: 1;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200px 500px;
+}
